@@ -35,7 +35,6 @@ function Chatbot() {
     // Post the message to the API
     try {
       const response = await fetch('https://scripter-node-js-v.onrender.com/createscripter', { // Replace with your actual API endpoint
-        mode: 'no-cors',
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
