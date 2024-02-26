@@ -32,9 +32,9 @@ function Chatbot() {
     // Add the message to the chat area
     addMsg(message);
     console.log("Message added: " + message);
-    // Post the message to the API
+    // Post the message to the API, add key directly, but env var is recommended
     try {
-      const response = await fetch('https://scripter-node-js-v.onrender.com/createscripter', { 
+      const response = await fetch('YOUR_ENDPOINT', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
